@@ -21,7 +21,7 @@ var articles= {
     <p>This is the article one</p>
 </div>`
 },
- 'article-two' : {
+ 'article-two': {
     title: 'article two',
     heading: 'Article two',
     content: `<div>
@@ -36,7 +36,7 @@ var articles= {
     <p>This is the article two</p>
 </div>`
 },
-'article-three' :{
+'article-three':{
     title: 'article three',
     heading: 'Article three',
     content: `<div>
