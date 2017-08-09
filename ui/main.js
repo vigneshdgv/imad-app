@@ -1,7 +1,7 @@
 console.log('Loaded!');
-var element = document.getElementById("maint");
-element.innerHTML="This Website is Blocked";
+var element = document.getElementById('maint');
+element.innerHTML='This Website is Blocked';
 var img = document.getElementById('madi');
 img.onclick = function () {
-    img.style.marginleft= "100px";
+    img.style.marginleft= '100px';
 };
