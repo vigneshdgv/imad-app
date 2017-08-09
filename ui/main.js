@@ -5,4 +5,4 @@ element.innerHTML="This Website is Blocked";
 var img=document.getElementById("imad");
 img.onclick =function () {
     img.style.marginleft="100px";
-}
+};
