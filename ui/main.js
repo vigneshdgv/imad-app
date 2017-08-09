@@ -10,5 +10,5 @@ img.style.marginleft=moveright+'px';
 }
 var img = document.getElementById('madi');
 img.onclick = function () {
-    setinterval(moveright,25);
+   var interval= setinterval(moveright,25);
 };
