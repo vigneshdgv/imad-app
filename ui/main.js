@@ -6,7 +6,7 @@ element.innerHTML='This Website is Blocked';
 var move=0;
 function moveright(){
 move =move + 10;
-img.style.marginleft=move+'px';
+img.style.marginLeft=move+'px';
 }
 var img = document.getElementById('madi');
 img.onclick = function () {
