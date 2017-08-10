@@ -46,7 +46,7 @@ submit.onclick = function(){
         }
     };
 var nameI = document.getElementById("Text");
-name= nameI.value;
+var name= nameI.value;
 request.open('GET','http://aspiringvignesh.imad.hasura-app.io/submitname?name=' +name,true);
 request.send('null');
 };
