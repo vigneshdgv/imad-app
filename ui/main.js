@@ -23,6 +23,6 @@ button.onclick = function(){
         }
     };
 
-request.open('GET','http://aspiringvignesh.imad.hasura-app.io/');
+request.open('GET','http://aspiringvignesh.imad.hasura-app.io/counter');
 request.send('null');
 };
