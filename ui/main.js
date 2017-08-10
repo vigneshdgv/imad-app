@@ -22,4 +22,7 @@ button.onclick = function(){
                 span.innerHTML= counter.toString();
         }    }
     };
+
+request.open('GET','http://aspiringvignesh.imad.hasura-app.io/');
+request.send('null');
 };
