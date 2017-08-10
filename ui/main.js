@@ -9,8 +9,9 @@ var img = document.getElementById('madi');
 img.onclick = function () {
    var interval= setInterval(moveright,25);
 };
-var counter = 0;
+
 var button = getElementById("counter");
+var counter = 0;
 counter.onclick = function(){
     counter = counter + 1;
     var span = getElementById("count");
