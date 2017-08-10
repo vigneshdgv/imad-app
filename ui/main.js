@@ -13,8 +13,13 @@ img.onclick = function () {
 var button = document.getElementById("counter");
 var counter = 0;
 button.onclick = function(){
-    counter = counter + 1;
-    var span = document.getElementById("count");
-span.innerHTML= counter.toString();
-    
+    var request =new XMLHttpRequest();
+    request.onreadyStatechange = function(){
+        if(request.readyState === XMLHttpRequest.done){
+            if(request.status===200){
+                counter = request.responseText;
+                var span = document.getElementById("count");
+                span.innerHTML= counter.toString();
+        }    }
+    };
 };
