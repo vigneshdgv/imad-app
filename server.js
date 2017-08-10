@@ -105,6 +105,12 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+var names= [];
+app.get('/submitname', function(req, res){
+   var name=req.query.name;
+   names.push(name);
+   res.send(JASON.stringify(names));
+});
 app.get('/:articlename', function (req, res) {
     var articlename =req.params.articlename;
     res.send(createtemplate(articles[articlename]));
