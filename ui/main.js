@@ -28,6 +28,8 @@ request.send('null');
 };
 var submit = document.getElementById("submitb");
 submit.onclick = function(){
+    var name = document.getElementById("Text");
+    name=name.value;
     var request =new XMLHttpRequest();
     request.onreadystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
