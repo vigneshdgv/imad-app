@@ -28,8 +28,6 @@ request.send('null');
 };
 var submit = document.getElementById("submitb");
 submit.onclick = function(){
-    var name = document.getElementById("Text");
-    name=name.value;
     var request =new XMLHttpRequest();
     request.onreadystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
@@ -38,7 +36,7 @@ submit.onclick = function(){
                 names=JSON.parse(names);
                 var list='';
                 for(var i=0;i<names.length;i++){
-                    list+='<li>'+names[i]+'</li>';
+                    list+='<li>' + names[i] +'</li>';
                 }
                     var ul =document.getElementById("list");
                     ul.innerHTML=list;
@@ -47,7 +45,8 @@ submit.onclick = function(){
             }
         }
     };
-
+var nameI = document.getElementById("Text");
+name= nameI.value;
 request.open('GET','http://aspiringvignesh.imad.hasura-app.io/submitname?name=' +name,true);
 request.send('null');
 };
